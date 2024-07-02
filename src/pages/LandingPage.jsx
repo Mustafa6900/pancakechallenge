@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import data from '../data/strings.json';
 import { isPalindrome, isPurePalindrome } from '../utils/palindrome';
+import { FaCheck, FaTimes } from 'react-icons/fa';
 
 function LandingPage() {
   const [results, setResults] = useState([]);
 
-  // useEffect hook'u ile sayfa yüklendiğinde strings.json dosyasındaki verileri kontrol et
   useEffect(() => {
     const checkPalindromes = () => {
       return data.map(text => ({
@@ -41,8 +41,12 @@ function LandingPage() {
                       : 'bg-white'
                 }>
                   <td className="py-3 px-4 border-b border-gray-200">{result.text}</td>
-                  <td className="py-3 px-4 border-b border-gray-200">{result.is_pure_palindrome.toString()}</td>
-                  <td className="py-3 px-4 border-b border-gray-200">{result.is_palindrome.toString()}</td>
+                  <td className="py-3 px-4 border-b border-gray-200">
+                      {result.is_pure_palindrome ? <FaCheck /> : <FaTimes style={{ color: 'red' }} />}
+                  </td>
+                  <td className="py-3 px-4 border-b border-gray-200">
+                      {result.is_palindrome ? <FaCheck /> : <FaTimes style={{ color: 'red' }} />}
+                  </td>
                 </tr>
               ))}
             </tbody>
