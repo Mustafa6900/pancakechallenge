@@ -8,7 +8,7 @@ Palindrome Checker is a web application built with React that allows users to ch
 - **Pure Palindrome Detection:** Checks if the text reads the same without considering spaces and special characters.
 - **Visual Feedback:** Highlights palindrome and pure palindrome results in a table.
 
-![image](https://github.com/Mustafa6900/pancakechallenge/assets/58307398/1ac5eea5-7f46-4e1a-9056-143a8dfffd01)
+![image](https://github.com/Mustafa6900/pancakechallenge/assets/58307398/a1798dff-12a9-4d8d-8416-e85bbd7fe103)
 
 ## Installation
 
