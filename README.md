@@ -12,20 +12,13 @@ Palindrome Checker is a web application built with React that allows users to ch
 
 ## Installation
 
-1. Clone the repository:
-
-   ```bash
-   git clone https://github.com/your-username/palindrome-checker.git
-   cd palindrome-checker
-   ```
-
-2. Install dependencies:
+1. Install dependencies:
 
    ```bash
    npm install
    ```
 
-3. Start the application:
+2. Start the application:
 
    ```bash
    npm start
